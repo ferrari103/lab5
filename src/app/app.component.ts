@@ -17,10 +17,10 @@ export class AppComponent {
   constructor() {
   }
   // tslint:disable-next-line:typedef
-  changeColor(t:number){
-    let color = Colors[t];
-    let a: any = color.id;
-    let b: any = document.getElementById(a);
+  changeColor(t: number){
+    const color = Colors[t];
+    const a: any = color.id;
+    const b: any = document.getElementById(a);
     color.hex = b.value;
   }
 }
